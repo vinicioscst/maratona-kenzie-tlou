@@ -121,12 +121,10 @@ body {
     gap: 25px;
 }
 
-#home .inside .cards #card1 {
+#home .inside .cards p.card1 {
     background: url(./assets/inside/survival.svg) no-repeat center;
-    background-size: cover;
     width: 260px;
     height: 140px;
-    border: 1px solid #2E2D2D;
 
     display: flex;
     align-items: center;
@@ -135,14 +133,14 @@ body {
     color: #B8B8B8;
     font-size: 21px;
     text-transform: uppercase;
+
+    cursor: pointer;
 }
 
-#home .inside .cards #card2 {
+#home .inside .cards p.card2 {
     background: url(./assets/inside/relationship.svg) no-repeat center;
-    background-size: cover;
     width: 260px;
     height: 140px;
-    border: 1px solid #2E2D2D;
 
     display: flex;
     align-items: center;
@@ -151,14 +149,14 @@ body {
     color: #B8B8B8;
     font-size: 21px;
     text-transform: uppercase;
+
+    cursor: pointer;
 }
 
-#home .inside .cards #card3 {
+#home .inside .cards p.card3 {
     background: url(./assets/inside/adventure.svg) no-repeat center;
-    background-size: cover;
     width: 260px;
     height: 140px;
-    border: 1px solid #2E2D2D;
 
     display: flex;
     align-items: center;
@@ -167,4 +165,6 @@ body {
     color: #B8B8B8;
     font-size: 21px;
     text-transform: uppercase;
+
+    cursor: pointer;
 }
