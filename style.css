@@ -21,13 +21,14 @@ body {
     font-family: 'Iceland', cursive;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 #home {
         background: url(./assets/background.svg) no-repeat center;
         background-size: cover;
         height: 900px;
-        padding: 50px 150px;
+        padding: 50px 190px;
 
         display: flex;
         flex-direction: column;
@@ -167,4 +168,41 @@ body {
     text-transform: uppercase;
 
     cursor: pointer;
+}
+
+#episodes {
+    background: url(./assets/backgroundEpisodes.png) no-repeat top;
+    background-size: cover;
+    height: 900px;
+    padding: 50px 190px;
+}
+
+footer {
+    background: linear-gradient(180deg, #000000 0%, #950202 289.06%);
+    height: 375px;
+    padding: 50px 190px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .footer-text h2 {
+    font-size: 48px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+footer .footer-text p {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--color-white);
 }
