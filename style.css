@@ -42,6 +42,12 @@ body {
     justify-content: space-between;
 }
 
+#home header img {
+    width: 205px;
+    height: 144px;
+    object-fit: cover;
+}
+
 #home header nav ul {
     display: flex;
     justify-content: space-between;
