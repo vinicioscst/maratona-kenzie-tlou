@@ -25,10 +25,10 @@ body {
 }
 
 #home {
-        background: url(./assets/background.svg) no-repeat center;
+        background: url(./assets/tlou-home-bg.svg) no-repeat center;
         background-size: cover;
         height: 900px;
-        padding: 50px 190px;
+        padding: 50px 200px;
 
         display: flex;
         flex-direction: column;
@@ -68,7 +68,7 @@ body {
     gap: 20px;
 }
 
-#home .title h1 {
+#home .title h2 {
     font-size: 92px;
     font-weight: normal;
     color: var(--color-white);
@@ -81,7 +81,8 @@ body {
     color: var(--text-color-1);
 }
 
-#home .title .buttons {
+#home .title .buttons {font-size: 22px;
+line-height: 26px;
     display: flex;
     gap: 30px;
 }
@@ -177,10 +178,89 @@ body {
 }
 
 #episodes {
-    background: url(./assets/backgroundEpisodes.png) no-repeat top;
+    background: url(./assets/tlou-episodes-bg.svg) no-repeat top;
     background-size: cover;
     height: 900px;
-    padding: 50px 190px;
+    padding: 50px 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#episodes .left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 480px;
+}
+
+#episodes h2 {
+    font-size: 92px;
+    font-weight: normal;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+#episodes .left-container .synopsis {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#episodes .left-container p {
+    font-family: 'Actor', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #C7C7C7;
+}
+
+#episodes .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 700px;
+    max-height: 700px;
+}
+
+#episodes .right-container .episodes-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow-y: scroll;
+}
+
+#episodes .right-container .episodes-list::-webkit-scrollbar {
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    border: 3px solid var(--color-black);
+}
+
+#episodes .right-container .episodes-list li {
+    background-color: var(--color-black);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+#episodes .right-container .episodes-list li h4 {
+    font-family: 'Darker Grotesque', sans-serif;
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+#episodes .right-container .episodes-list li p {
+    font-family: 'Darker Grotesque', sans-serif;
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 footer {
@@ -200,7 +280,7 @@ footer .footer-text {
     gap: 30px;
 }
 
-footer .footer-text h2 {
+footer .footer-text h3 {
     font-size: 48px;
     font-weight: normal;
     text-transform: uppercase;
